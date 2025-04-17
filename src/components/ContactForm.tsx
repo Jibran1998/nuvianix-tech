@@ -171,7 +171,7 @@ export default function ContactForm() {
             <option value="devops">DevOps Engineering</option>
             <option value="web">Web Development</option>
             <option value="app">App Development</option>
-            <option value="sqa">SQA & Test Automation</option>
+            <option value="sqa">SQA &amp; Test Automation</option>
             <option value="other">Other</option>
           </select>
         </div>

@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <div
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-purple-900 bg-[size:150%] overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-background bg-[size:150%] overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -60,7 +60,7 @@ const Hero = () => {
           {Array.from({ length: 20 }).map((_, i) => (
             <motion.div
               key={i}
-              className="absolute rounded-full bg-purple-600/10"
+              className="absolute rounded-full bg-primary-500/10"
               style={{
                 width: `${Math.random() * 300 + 50}px`,
                 height: `${Math.random() * 300 + 50}px`,
@@ -98,14 +98,14 @@ const Hero = () => {
         >
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-blue-200"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-primary-700"
           >
             Next-Gen Digital Transformation
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto"
           >
             Empowering businesses through innovative cloud solutions and
             cutting-edge software development.
@@ -117,13 +117,13 @@ const Hero = () => {
           >
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
               Let&apos;s Build Something Great
             </Link>
             <Link
               href="/services"
-              className="bg-transparent border-2 border-purple-500 text-white hover:bg-purple-500/10 px-8 py-4 rounded-full text-lg font-medium transition-all duration-300"
+              className="bg-transparent border-2 border-primary-500 text-primary-700 hover:bg-primary-50 px-8 py-4 rounded-full text-lg font-medium transition-all duration-300"
             >
               Explore Services
             </Link>
@@ -143,7 +143,7 @@ const Hero = () => {
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center"
         >
-          <span className="text-gray-400 text-sm mb-2">Scroll Down</span>
+          <span className="text-gray-600 text-sm mb-2">Scroll Down</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -154,7 +154,7 @@ const Hero = () => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="text-gray-400"
+            className="text-primary-600"
           >
             <path d="M12 5v14M5 12l7 7 7-7" />
           </svg>

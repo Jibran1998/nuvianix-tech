@@ -43,13 +43,13 @@ const Header = () => {
       variants={headerVariants}
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-md py-3 shadow-lg"
+          ? "bg-white/90 backdrop-blur-md py-3 shadow-lg"
           : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-white">
+          <Link href="/" className="text-2xl font-bold text-primary-700">
             Nuvianix
           </Link>
 
@@ -59,7 +59,7 @@ const Header = () => {
               <Link
                 key={link.name}
                 href={link.path}
-                className="text-gray-300 hover:text-white transition-colors duration-300"
+                className="text-gray-700 hover:text-primary-700 transition-colors duration-300"
               >
                 {link.name}
               </Link>
@@ -69,7 +69,7 @@ const Header = () => {
           {/* CTA Button */}
           <Link
             href="/contact"
-            className="hidden md:block bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="hidden md:block bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             Let's Talk
           </Link>
@@ -119,14 +119,14 @@ const Header = () => {
         initial="closed"
         animate={isMobileMenuOpen ? "open" : "closed"}
         variants={mobileMenuVariants}
-        className="md:hidden fixed top-[60px] right-0 w-full h-screen bg-black/95 backdrop-blur-md"
+        className="md:hidden fixed top-[60px] right-0 w-full h-screen bg-white/95 backdrop-blur-md"
       >
         <div className="flex flex-col items-center pt-10 space-y-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.path}
-              className="text-xl text-gray-300 hover:text-white transition-colors duration-300"
+              className="text-xl text-gray-700 hover:text-primary-700 transition-colors duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
@@ -134,7 +134,7 @@ const Header = () => {
           ))}
           <Link
             href="/contact"
-            className="mt-6 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="mt-6 bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Let's Talk

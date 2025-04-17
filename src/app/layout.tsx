@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Empowering businesses through innovative cloud solutions and cutting-edge software development." />
@@ -45,7 +45,7 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@nuvianix" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-grow">

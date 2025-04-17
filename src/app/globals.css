@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #f0f7ff;
+  --foreground: #1e293b;
 }
 
 @layer base {
@@ -16,12 +16,6 @@
   }
 }
 
-/* Dark mode only - no light mode */
-.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -31,27 +25,27 @@ body {
 /* Custom grid pattern for backgrounds */
 .bg-grid-pattern {
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
-/* Custom scrollbar for dark theme */
+/* Custom scrollbar for light theme */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #f0f7ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #3b82f6;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #2563eb;
 }
 
 /* Smooth scrolling */
